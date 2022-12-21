@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Case Study</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            img {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">About Me</a></li>
+							<li><a href="launching.html">Launching into Cybersecurity</a></li>
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Top of the Page</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Case Study: ASMIS Security Report </h1>
+									</header>
+									<span class="image main"><img src="images/AdobeStock_429533878.jpeg" alt="" /></span>
+									<h2>Medical Centre Enquiry</h2>
+                                    <h3>As a cybersecurity professional, this is a breakdown of the needs, requirements, issues, and resolutions for a medical centre and their booking system needs.</h3>
+                                    <h3><b>Introduction</b></h3>
+                                    A community clinic is enquiring about implementing an appointment and scheduling management information system (ASMIS). The growth rate in the local demographics is putting strain on the practice; therefore, getting patients to care in good time is proving more challenging. Appointment scheduling systems “lie at the intersection of efficiency and timely access to health services” (Gupta, 2008), however, using this system there will be a great deal of sensitive information being collected, therefore presenting a very real security risk if exposed. To correctly advise the team this report will cover the benefits and problems of the ASMIS with cybersecurity in mind. To understand the potential risks, metrics, and methodologies, two UML diagrams will be presented displaying the system and its potential weaknesses. Starting with a class diagram to map how the system communicates with multiple actors. Use cases and misuse cases will be talked about extensively as they capture the functional requirements of one or more actors interacting with the system. Using a hybrid threat modelling technique, the cyber threats will be detected, assessed, and mitigated using STRIDE methodology and Attack Trees. This is followed by an analysis of multi-factor authentication, and web application firewalls, to help defend against specific attacks.
+                                    </p>
+                                    <h3><b>Security Report</b></h3>
+                                    <p><b>Benefits of ASMIS</b>
+                                    </p>
+                                        <p>A web-based appointment and scheduling management information system (ASMIS) would ensure seeing patients promptly, it is said that inefficient patient scheduling can delay medical therapy, such as radiation (Sauré, 2012), which is complex and is classified in many ways. The ASMIS would allow for specialised care to be assigned at the point of booking, rather than after an initial consultation or by the deduction from the receptionist (Gupta, 2008). 
+                                        </p>
+                                        <p>Patients will be confident they can get an appointment with less fuss, due to no phone call wait times. In addition, receptionists and general administrators are freed up for other areas of their work, feeling less overworked and increasing the ability to direct help to patients with more accuracy and care. Having fewer staff manning the portal can minimise errors due to secured logins (Akinode, 2017).
+                                        </p>
+                                        <p>Doctors can get to the patients directly related to their expertise, and the satisfaction of doctors increases their quality of employment. An automated scheduling system allows the outpatient to register their detail online, and the Doctors can book and reject appointments. “The system will reduce the waiting time of the patient and also increase the efficiency of the Doctors” (Akinode, 2017). 
+                                        </p>
+                                        <p><b>Problems of ASMIS</b></p>
+                                        <p>Regardless of how much our computational landscape has improved and changed, there is still a distinct digital divide among the public. This digital divide may leave the most critical patients that require the most help. In addition, “Scheduling problems are ubiquitous, ranging from computer systems and networks to production factories and patient appointments.” (Akinode, 2017). 
+                                        </p>
+                                        <p>Patients usually undergo multiple diagnostic tests, and consultations before they are considered fully treated, and scheduling systems are usually demonstrated using single diagnostics. Whereas this is useful, it could still be optimised, so the problem of diagnostics at the point of booking is still not perfect (Marynissen, 2019).
+                                        In terms of security, safeguarding health data at varying locations/departments in different forms is a concern many health institutions have (Keshta, 2021). 
+                                        </p>
+                                        <p>Privacy, security, and confidentiality are the main concerns for ASMIS. Patients and healthcare workers will use ASIMS to view and edit data, in the process, the healthcare workers could abuse the health records access whether intentionally or not. To effectively achieve confidentiality, management must focus on professional silence in electronic healthcare records, as this presents possible misuse cases. In terms of the availability of data, the information in healthcare records will be accessible by the right personnel. Therefore, professional silence, secure account login, encryption, and suitable access rights must be relied upon. Encryption is often used for health data sent across exposed networks, however, encryption is difficult to apply to data that is stored in mobile devices, therefore putting the security of patient data at risk (Keshta, 2021). 
+                                        </p>
+                                    <h3><b>System Aspects</b></h3>
+                                    <p>Possible Vulnerabilities
+
+                                    <p>A vulnerability is a weakness that could be used to take advantage of to compromise the confidentiality, availability, or integrity of an asset. An electronic medical record is a prime target as the raw data has such high value. They appear through flaws, features, and user errors. Where flaws are unintended functionality, features are intended functionality which can be misused e.g., exploitation of macros. Some of the most common exploitations that can occur to electronic records are: 
+                                    <b>Broken authentication</b>, which is demonstrated in the figure below.
+                                    </p>
+                                    <span class="image main"><img src="images/broken.png" alt="" /></span>
+                                    </p>
+                                    <p><i>Figure 1 Demonstrating how broken authentication works.</i></p>
+                                    <p>For the ASMIS to be immune to this kind of user-session hijacking, it will need to make sure the web portal has sufficient security, such as Multi-Factor Authentication (MFA) (Gupta, 2022).
+                                    <b>SQL injection:</b> SQL injection vulnerabilities can be attacked by threat actors and bypass security measures.
+                                    </p>
+                                    <span class="image main"><img src="images/sql.png" alt="" /></span>
+                                    <p><i>Figure 2 Demonstrating how SQL injection occurs.</i></p>
+                                    <p>For the ASMIS to protect against this vulnerability attack is to ensure input validation, firewalls, and turn off the visibility of database errors. </p>
+                                    
+                                    <b><h3>Threat Modelling Techniques</h3></b>
+                                    <p>Threat modelling is a technique that helps achieve a secure design in an objective and structured way. Threats are enumerated, caused by a vulnerability, realised via an attack, and quashed by countermeasures (Sriram Krishnan, 2017).</p>
+                                    <span class="image main"><img src="images/vulnerabilities.png" alt="" /></span>
+                                    <p><i>Figure 3 Diagram to depict what threat modelling is.</p></i>
+                                    <p><b>STRIDE</b>
+                                        <p>
+                                        Looking at a software system as a set of components is key in methodologies such as STRIDE (Sawano, 2019). Using STRIDE will open the analysis to all its components and is a systematic approach to identifying threats. A STRIDE-based threat modelling can provide full-proof protection, STRIDE is lightweight and effective and works by identifying component-level vulnerabilities and their potential physical consequences. It represents a mnemonic for six different security threats: Spoofing, Tampering, Repudiation, Information disclosure, Denial of Service (DoS), and Elevation of privilege (Khan, 2017).
+                                    </p><p>
+                                        Using the example of broken authentication. The threat scenario, in that case, is attacking the login (Conklin, n.d.). In that specific example, the attacker uses the elevation of privilege method to gain the user’s privileges, without a secure web server this could be a drastic loss for the clinic. 
+                                    </p><p>   
+                                        Threat analysis measures risk, the probability that a threat occurs, and the cost to that organisation. Combining the use case/misuse cases with threat modelling will minimise the probability the threat occurs therefore reducing the risk. To ensure all areas of security are covered, a hybrid approach with attack trees will be advised.
+                                    </p><p>   
+                                        <b>Attack Tree</b>
+                                    </p>
+                                        <p>Attack trees are conceptual representations of possible attacks whereby threats occur. They describe the security of the system based on different attacks demonstrated in a tree structure. The goal of the attack is the root node, as demonstrated below:
+                                        <span class="image main"><img src="images/attacktree.png" alt="" /></span>
+                                        <p><i>Figure 4 Attack Tree example.</p></i>
+                                        <p>Once the possible attacks have been modelled in this structure, the following attributes can be applied:
+                                        <li>Probability of an attack,</li>
+                                        <li>Cost of an attack,</li>
+                                        <li>Competency required to perform the attack,</li>
+                                        <li>Impact on business,</li>
+                                        <li>Attack patterns,</li>
+                                        <li>Attacks specific to protocols.</li>
+                                        </p>
+                                        <p>Combined with STRIDE categorisation, attack trees allow organisations to go deeper into prevention tactics by adding a quantifiable attribute assignment, which is why this is a powerful threat modelling duo. Albeit it may not always be possible to quantify all these attributes immediately if the clinic has specific goals and definitive categories of attacks laid out then the clinic can prevent numerous attacks towards its system (Sriram Krishnan, 2017).</p>
+                                        
+                                        <h3><b>Technologies to Address</h3></b>
+
+                                        <p><b>Multi-Factor Authentication</p></b>
+                                        
+                                        <p>Using multi-factor authentication would be the strongest way to protect against a user session attack. One-time pins are used as a typical MFA component (OTP) through email, text, etc. MFA methods incorporate knowledge, possession, and inheritance. An example can be seen by Bartłomiejczyk et al whereby MFA protocol is implemented in a mobile environment showing the resilience of MFA in terms of man-in-the-middle attack resistance, and broken authentication attacks (Bartłomiejczyk, 2019).
+                                        </p>
+                                        <p><b>Strengths of MFA</b></p>
+                                        <p>
+                                        Forcing users to identify themselves with more credentials strengthens general security as the security check is run independently and not through the clinic’s portal. It reduces the risk of passwords being stolen by halting the user session hijack, if the hacker cannot access the user’s email or phone they are blocked and cannot steal the password via a broken authentication (Odmin, 2022).
+                                        </p>
+                                        <p><b>Weaknesses of MFA</p></b>
+                                        
+                                        <p>Unfortunately, with the rising adoption of MFA, attackers have developed loopholes. Attackers can use credential-stealing malware, and cyber insecure users of the portal could be tricked. These attacks steal MFA codes, certificates, or authentication cookies from browsers (Kime, 2022). In addition, they can be a complex process and demanding to implement (Bartłomiejczyk, 2019).
+                                        </p>
+                                        <p><b>Web Application Firewall</p></b>
+                                        
+                                        <p>Another prevention that would directly help against SQL injection, is implementing a web application firewall (WAF), which acts as a shield placed between the application and the internet. It operates through a set of policies to protect against vulnerabilities. An example can be seen from Prandl et al where the WAF ModSecurity was tested and found to have “the best balance between blocking malicious traffic and allowing normal traffic through” (Prandl, 2015, p. 508).
+                                        </p>
+                                        <p><b>Strengths of WAF</b></p>
+                                        <p>
+                                        Host-based WAF is inexpensive and can be easily customised, it can effectively block out malicious traffic that attempts to interfere with the portal. Firewalls in general have better security and network monitoring features and can allow for more network functionality (Cloudflare, 2022).
+                                        </p>
+                                        <p><b>Weaknesses of WAF</b></p>
+                                        <p>WAF consumes local server resources, has a complex implementation, and has high maintenance costs. This may take a lot of time so therefore could be costly for the clinic. Thus, slowing down the process or halting it altogether (Cloudflare, 2022).
+                                        </p>
+                                        <p>
+                                        <h3>Conclusions</h3>
+
+                                        <p>To motivate clinics to use an ASMIS they must employ hybrid threat modelling techniques by combining STRIDE and attack trees. It is paramount for success to adopt a structured approach, thus why using more than one methodology is key for employing security as a component of the software-development lifecycle, rather than a bonus feature. If attacks are planned against, the security design will either thwart attacks completely or provide layers of security, such as MFA and WAF, that attackers will have to infiltrate to achieve their bounties. Thus, making the process more difficult or less cost-effective for the threat actor. In addition, combining these steps with STRIDE-based threat modelling can provide full-proof protection. Unfortunately, an attacker can achieve an objective by exploiting threats through the users themselves via credential theft. But by identifying component-level vulnerabilities and their potential physical consequences, STRIDE can provide comprehensive and effective solutions for this due to the extensive nature of the methodology.
+                                        </p>
+                                        <p><b>Works Cited</b></p>
+                                        <p>1.	Akinode, J. L., 2017. Design and Implementation of a Patient Appointment and Scheduling System. International Advanced Research Journal in Science, Engineering and Technology, 4(12), pp. 16-23.
+                                        <p>   2.	Bartłomiejczyk, M., 2019. Multifactor Authentication Protocol in a Mobile Environment. IEEE Access, Volume 7, pp. 157185-157199.
+                                        </p><p>   3.	Cloudflare, 2022. What is a WAF? | Web Application Firewall explained. [Online] 
+                                                Available at: https://www.cloudflare.com/en-gb/learning/ddos/glossary/web-application-firewall-waf/
+                                                [Accessed 20 November 2022].
+                                        </p><p>   4.	Conklin, L., n.d. Threat Modeling Process. [Online] 
+                                            Available at: https://owasp.org/www-community/Threat_Modeling_Process
+                                            [Accessed 19 November 2022].
+                                        </p><p>    5.	Damodaran, M., 2006. Secure Software Development Using Use Cases and Misuse Cases. Issues in Information Systems, Volume 7.
+                                        </p><p>    6.	Gupta, D., 2008. Appointment scheduling in health care: Challenges and opportunities. IIE Transactions , 40(9), pp. 800-819.
+                                        </p><p>    7.	Gupta, D., 2022. Login Radius. [Online] 
+                                            Available at: https://blog.loginradius.com/identity/what-is-broken-authentication/
+                                            [Accessed 19 November 2022].
+                                        </p><p>    8.	Keshta, I., 2021. Security and privacy of electronic health records: Concerns and challenges. Egyptian Informatics Journal, 22(2), pp. 177-183.
+                                        </p><p>    9.	Khan, R., Mclaughlin, K., Laverty, D. & Sezer, S. (2017) STRIDE-based threat modeling for cyber-physical systems. In: [Online]. 2017 p. Available from: doi:10.1109/isgteurope.2017.8260283.
+                                        </p><p>    10.	Kime, C., 2022. MFA Advantages and Weaknesses. [Online] 
+                                            Available at: https://www.esecurityplanet.com/applications/mfa-advantages-and-weaknesses/
+                                            [Accessed 20 November 2022].
+                                        <p></p>    11.	Marynissen, J., 2019. Literature review on multi-appointment scheduling problems in hospitals. European Journal of Operational Research, 272(2), pp. 407-419.
+                                        <p></p>    12.	Odmin, 2022. Benefits Of Multi-Factor Authentication. [Online] 
+                                            Available at: https://password-saver.com/benefits-of-multi-factor-authentication/?utm_source=google&utm_medium=cpc&utm_campaign=inweb_SER_password-saver_Statti_UK&utm_content=582190949461&utm_term=benefits%20of%20multi%20factor%20authentication&gclid=Cj0KCQiAveebBhD_AR
+                                            [Accessed 20 November 2022].
+                                        </p><p>    13.	Prandl, S., 2015. A Study of Web Application Firewall Solutions. Information Systems Security, Volume 9478, pp. 501-510.
+                                        </p><p>    14.	Sauré, A., 2012. Dynamic multi-appointment patient scheduling for radiation therapy. European Journal of Operational Research, 223(2), pp. 573-584.
+                                        </p><p>    15.	Sawano, D. B. J. &. D. D., 2019. Secure by Design. New York: Manning Publications Co. LLC.
+                                        </p><p>    16.	Sriram Krishnan, 2017. A Hybrid Approach to Threat Modelling. [Online] 
+                                            Available at: https://blogs. sans. org/appsecstreetfighter/files/2017/03/A-Hybrid-Approach-to-Threat-Modelling. pdf
+                                        </p>   
+                                            </p>
+                                        </p>
+                                    </p></p>
+                                </div>
+							</section>
+
+						</div>
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Let's Go Back</h2>
+								</header>
+								<p>You can navigate back to my homepage using the following button!</p>
+								<ul class="actions">
+									<li><a href="index.html" class="button next">Click to go Home</a></li>
+								</ul>
+							</div>
+						</section>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:stella_williams@hotmail.co.uk">stella_williams@hotmail.co.uk</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+44 79204 612 87</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Where am I?</h3>
+									<span>Edinburgh<br>
+									United Kingdom</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://twitter.com/AstroCode_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/stoodlesz/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/stoodlesz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/stella-williams94/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

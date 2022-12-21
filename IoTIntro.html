@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IoT Architecture and Vulnerabilities</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            video {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+            img {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">About Me</a></li>
+							<li><a href="launching.html">Launching into Cybersecurity</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Top of the Page</a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main" class="alt">
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>IoT Architecture</h1>
+									</header>
+									<!-- <span class="image main"><img src="images/MAX_7848.jpg" alt="" /></span> -->								
+                                    <p> 
+                                        Internet of things is an advanced technology where billions of devices are interconnected via gateways and services, using Internet Protocol (IP). In the following short video I will introduce IoT architecture.
+									</p>
+                                    <video controls width="100%">
+                                        <source src="videos/IntroIoT.mp4"
+                                                type="video/mp4">
+                                    <!-- <source src="/media/cc0-videos/flower.mp4"
+                                                type="video/mp4"> -->
+                                    
+                                        Download the
+                                        <a href="videos/IntroIoT.mp4">MP4</a>
+                                        video.
+                                    </video>
+                                    <p><br>The Internet of Things (IoT) is the network of physical objects—devices, instruments, vehicles, buildings and other
+                                        items embedded with electronics, circuits, software, sensors and network connectivity that enables these objects to
+                                        collect and exchange data. The Internet of Things allows objects to be sensed and controlled remotely across existing
+                                        network infrastructure, creating opportunities for more direct integration of the physical world into computer-based
+                                        systems, and resulting in improved efficiency and accuracy.</p>
+                                    <p>A critical requirement of an IoT is that the things in the network must be inter-connected. IoT system architecture
+                                        must guarantee the operations of IoT, which bridges the gap between the physical and the virtual worlds. Design of IoT
+                                        architecture involves many factors such as networking, communication, business models and processes, and security. In
+                                        designing the architecture of IoT, the extensibility, scalability, and interoperability among heterogeneous devices and
+                                        their models should be taken into consideration. Due to the fact that things may move physically and need to interact
+                                        with each other in real-time mode, IoT architecture should be adaptive to make devices interact with other things
+                                        dynamically and support unambiguous communication of events.</p>
+                                    <p>The figure below shows a general structure of the trust zones and boundaries:</p>
+                                    <span class="image main"><img src="images/IOT ARCH.png" alt="" /></span>
+                                    <p>(Pietschmann, 2021)
+                                    <b>Local Zone:</b>
+                                    The Local Zone is the area where any local users will be. This could be the local or on-premises network where client computers exist, or even the physical space in close proximity to the Devices and Field Gateways. (Pietschmann, 2021)</p>
+                                    <p>
+                                        <b>Device Zone:</b>
+                                    The Device Zone is the area where the IoT devices are. This includes the physical space around the devices, as well as the local network the devices are connected to.</p>
+                                    <p>
+                                        <b>Field Gateway Zone:</b>
+                                    A Field Gateway is a component that serves as a connection point between the cloud and one or more devices and/or other field gateways.</p>
+                                    <p>
+                                        <b>Cloud Gateway Zone:</b>
+                                    Cloud Gateways are very similar to Field Gateways, however, instead of running on-premises or local to other devices, they run in the cloud.</p>
+                                    <p>
+                                        <b>Gateway and Services Zone:</b>
+                                    The Gateway and Services Zone is where all the other backend services reside. This will include databases, REST APIs, hybrid connectivity to on-premises systems, and any other backend component of the system.</p>
+                                    <p>
+                                        <b>Remote User Zone:</b>
+                                    The Remote User Zone is a generic container for pieces of the solution that provide some type of remote or external access to users or even third-party partners.</p>
+                                    
+									<header class="major">
+										<h1>IoT Vulnerabilites</h1>
+									</header>
+
+                                    <p> 
+                                        In the following video I will introduce the vulnerabilities, attacks and mitigation for IoT security.
+									</p>
+                        
+                                    <video controls width="100%">
+                                        <source src="videos/IOTVulns.mp4"
+                                                type="video/mp4">
+                                    <!-- <source src="/media/cc0-videos/flower.mp4"
+                                                type="video/mp4"> -->
+                                    
+                                        Download the
+                                        <a href="videos/IOTVulns.mp4">MP4</a>
+                                        video.
+                                    </video>
+                                    <h2><br>Software Defined Networking (SDN)</h2>
+                                    <p>
+                                        Maintaining and securing such large scale and heterogeneous network is a challenging task. As the architecture of "things" grows traditional security mechanisms like Firewalling, Intrusion Detection and Prevention Systems, are much harder to employ as sufficient security methods as they are deployed at the Internet edge.
+                                        The borderless architecture of the IoT raises additional concerns over network access control and software verification. 
+                                        The Software Defined Networking (SDN), offers many opportunities to protect the network in a more efficient and flexible way. 
+                                        In SDN architectures, network devices do not make forwarding decisions. Network devices communicate with a special node, called the SDN controller, in order to provide them with the appropriate forwarding decisions. 
+                                        A new device called controller connects to the switch through a secured OpenFlow channel and manages this switch via the OpenFlow protocol.
+                                        In terms of security, SDN architecture extends the security perimeter to the network access end point devices (access switches, wireless access points, etc.), 
+                                        by pushing security policies to those devices.</p>
+                                    <h2>Single Point of Failure</h2>
+                                    <p>Due to the nature of SDNs, there is possibility for a single point of failure, this point is the controller. This can increase the possibility of DoS, and with
+                                        control of the controller, the threat actor has access to all of the devices connected to that controller. A solution is <b>synchronised multiple controllers</b>.
+                                        There is increased network performance with multiple controllers, because each controller has a partial view of the network, and the controllers have to collaborate and exchange informations with each other                                         (Flauzac, 2015).The interaction between the Controller(s) and the Open-Flow enabled switches is essentially to have one Openflow switch multi-homed to multiple controllers. If one of the controllers goes down, another is ready to control the switch.
+                                    </p>
+                                    <h2>The Promise of Reliable and Secure Connectivity</h2>
+                                    <p>The cyber landscape needs to have accountability and standards to follow, this way every company/organisation has a minimum
+                                        that gives a baseline for security. With IoT impacting so many homes and businesses, the need for a widespread standard, or set of standards, is growing exponentially.
+                                        Consumers need a seal of approval to guarantee their privacy is protected by brands they trust, developers need standards to help create reliable, and secure IoT devices to accelarate security positive innovation in software design.
+                                        In addition, retailers need to know how to promise security for their user base (Perkins, 2022). Using standards such as <b>Matter</b>, or <b>Thread</b> in coalition could be the solution the world is looking for.
+                                        One really exciting movement is the one away from "always being online", Matter allows people to use IoT devices <b>offline</b>. This ability to switch off smart home devices from the cloud, gives users versatility
+                                        and an increased trust in their item's security.
+                                    </p>
+                                    <p><b>Work Cited</b></p>
+                                    <p>Perkins, S. (2022) Matter explained: What is the next-gen smart home standard?, Android Police. Available at: https://www.androidpolice.com/matter-smart-home-standard-explained/ (Accessed: December 20, 2022). </p>
+                                    <p>Build with matter: Smart home device solution (2022) CSA. Available at: https://csa-iot.org/all-solutions/matter/ (Accessed: December 20, 2022). </p>
+                                    <p>Flauzac, O. et al. (2015) “SDN based architecture for IOT and improvement of the security,” 2015 IEEE 29th International Conference on Advanced Information Networking and Applications Workshops [Preprint]. Available at: https://doi.org/10.1109/waina.2015.110. </p>
+                                    <p>Pietschmann, C. and Pietschmann, C., 2021. IoT Security Architecture: Trust Zones And Boundaries | Build5Nines. [online] Build5Nines. Available at: <https://build5nines.com/iot-security-architecture-trust-zones-and-boundaries/> [Accessed 25 November 2021].</p>
+                                </div>
+							</section>
+					</div>
+						<!-- Three -->
+                        <section id="three">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>Let's Go Back</h2>
+                                </header>
+                                <p>You can navigate back to my homepage using the following button!</p>
+                                <ul class="actions">
+                                    <li><a href="index.html" class="button next">Click to go Home</a></li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                            <!-- Contact -->
+                            <section id="contact">
+                                <div class="inner">
+                                    <section>
+                                        <form method="post" action="#">
+                                            <div class="fields">
+                                                <div class="field half">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name" id="name" />
+                                                </div>
+                                                <div class="field half">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" />
+                                                </div>
+                                                <div class="field">
+                                                    <label for="message">Message</label>
+                                                    <textarea name="message" id="message" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                                <li><input type="reset" value="Clear" /></li>
+                                            </ul>
+                                        </form>
+                                    </section>
+                                    <section class="split">
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-envelope"></span>
+                                                <h3>Email</h3>
+                                                <a href="mailto:stella_williams@hotmail.co.uk">stella_williams@hotmail.co.uk</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-phone"></span>
+                                                <h3>Phone</h3>
+                                                <span>+44 79204 612 87</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-home"></span>
+                                                <h3>Where am I?</h3>
+                                                <span>Edinburgh<br>
+                                                United Kingdom</span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </section>
+        
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <div class="inner">
+                                    <ul class="icons">
+                                        <li><a href="https://twitter.com/AstroCode_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://www.instagram.com/stoodlesz/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://github.com/stoodlesz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/stella-williams94/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
+                                </div>
+                            </footer>
+        
+                    </div>
+        
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrolly.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+        
+            </body>
+        </html>

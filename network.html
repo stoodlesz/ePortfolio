@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Network Architecture and Vulnerabilities</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            video {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+            img {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">About Me</a></li>
+							<li><a href="launching.html">Launching into Cybersecurity</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Top of the Page</a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main" class="alt">
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Network Architecture</h1>
+									</header>
+									<!-- <span class="image main"><img src="images/MAX_7848.jpg" alt="" /></span> -->								
+                                    <p> 
+                                        Network architecture is a way to analyse network data and systems. It is based on conceptual models that streamline variance among network hardware and software systems. In the video below I will introduce network security and architecture.
+
+									</p>
+                                    <video controls width="100%">
+                                        <source src="videos/NetworkArch.mp4"
+                                                type="video/mp4">
+                                    <!-- <source src="/media/cc0-videos/flower.mp4"
+                                                type="video/mp4"> -->
+                                    
+                                        Download the
+                                        <a href="videos/NetworkArch.mp4">MP4</a>
+                                        video.
+                                    </video>
+<br><br>
+                                    <header class="major">
+										<h1>Open Systems Interconnection (OSI) Model in Detail</h1>
+									</header>
+                                    <span class="image main"><img src="images/OSI IMG.png" alt="" /></span>
+                                    <p><b>Physical:</b> Different types of coax cables, fibres, wireless routers and hubs and switches and repeaters. </p>
+                                    <p><b>Data Link:</b> Deals with switches and bridges and different types of network frames and ethernet based communication: Frames, ethernet, PPP,  switch, bridge.</p>
+                                    <p><b>Network:</b> Packets: IP, ICMP, IPSec, IGMP.</p>
+                                    <p><b>Transport:</b> Deals with all sorts of security.  It defines how the packets are being organised and how it is it is being sent from data link to transport layer.
+                                        It handles the the IP communication of the data and sends it to the transport layer. Which provides an end-to-end connectivity using:  TCP connection or UDP connection.</p>
+                                    <p><b>Session:</b> This deals with the overall session of the communication. So, it handles synchronisation of data. It determines the ports and sockets that are required, to connect different devices all together: API's, Sockets, WinSock.</p>
+                                    <p><b>Presentation:</b>This deals with security. Also called syntax layer. It is more of a layer that defines exactly what can be included in a in a web based environment. Dealing with server side content of the data and application level, low level data: SSL, SSH, IMAP, FTP, MPEG, JPEG.</p> 
+                                    
+                                    <header class="major">
+										<h1>General Network Security Architecture</h1>
+									</header>
+                                    <span class="image main"><img src="images/networkarch.png" alt="" /></span>
+                                    <p>A regular user is connected to internet, assume not connected to a VPN. The user is connected to the Internet, the Internet is connected to the web server through a firewall. There are two firewalls as this is dealing with web server and database servers. 
+
+                                        These are the default ports: TCP Port 80, 443, and TCP port 1433. These are the default ports of web servers and database servers. Where exactly is security happening? At the firewall level. We define different rules based on the input, and when the data is sent to the next layer. There should be web-based server authentication, database level security. In addition, there should be separate web server authentication system working. The user first crosses the firewall successfully and upon successful movement through the firewall, it reaches a web server and may meet another layer of security before entering the second firewall. A layer of security at the database server is implemented before a user can access the data.
+                                        </p>
+                                    <p>Watch the following video on vulnerabilities, attacks and mitigation of network security.</p>
+                                    
+
+                                    <video controls width="100%">
+                                        <source src="videos/networkvuln.mp4"
+                                                type="video/mp4">
+                                    <!-- <source src="/media/cc0-videos/flower.mp4"
+                                                type="video/mp4"> -->
+                                    
+                                        Download the
+                                        <a href="videos/networkvuln.mp4">MP4</a>
+                                        video.
+                                    </video>
+
+                                </div>
+							</section>
+					</div>
+						<!-- Three -->
+                        <section id="three">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>Let's Go Back</h2>
+                                </header>
+                                <p>You can navigate back to my homepage using the following button!</p>
+                                <ul class="actions">
+                                    <li><a href="index.html" class="button next">Click to go Home</a></li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                            <!-- Contact -->
+                            <section id="contact">
+                                <div class="inner">
+                                    <section>
+                                        <form method="post" action="#">
+                                            <div class="fields">
+                                                <div class="field half">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name" id="name" />
+                                                </div>
+                                                <div class="field half">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" />
+                                                </div>
+                                                <div class="field">
+                                                    <label for="message">Message</label>
+                                                    <textarea name="message" id="message" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                                <li><input type="reset" value="Clear" /></li>
+                                            </ul>
+                                        </form>
+                                    </section>
+                                    <section class="split">
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-envelope"></span>
+                                                <h3>Email</h3>
+                                                <a href="mailto:stella_williams@hotmail.co.uk">stella_williams@hotmail.co.uk</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-phone"></span>
+                                                <h3>Phone</h3>
+                                                <span>+44 79204 612 87</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-home"></span>
+                                                <h3>Where am I?</h3>
+                                                <span>Edinburgh<br>
+                                                United Kingdom</span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </section>
+        
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <div class="inner">
+                                    <ul class="icons">
+                                        <li><a href="https://twitter.com/AstroCode_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://www.instagram.com/stoodlesz/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://github.com/stoodlesz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/stella-williams94/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
+                                </div>
+                            </footer>
+        
+                    </div>
+        
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrolly.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+        
+            </body>
+        </html>

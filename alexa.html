@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Alexa, Security Flawed?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            video {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+            img {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">About Me</a></li>
+							<li><a href="launching.html">Launching into Cybersecurity</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Top of the Page</a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main" class="alt">
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Alexa, Security Flawed?</h1>
+									</header>
+									<span class="image main"><img src="images/AdobeStock_236847941.jpeg" alt="" /></span>							
+                                    <p> 
+                                        An intelligent virtual assistant (IVA) or intelligent personal assistant (IPA) is a software 
+                                        agent that can perform tasks or services for an individual based on commands or questions. 
+                                        Amazon Alexa, commonly known as “Alexa” is an AI based virtual assistant developed by Amazon, 
+                                        capable of voice interaction, music playback, setting alarms and other tasks, including controlling 
+                                        smart devices as part of a home automation system. Users are able to extend Alexa s capabilities by 
+                                        installing “skills” – additional functionality developed by third-party vendors which can be 
+                                        thought of as apps – such as weather programs and audio features.
+                                    </p>
+                                    <h2>Misconfigured Cross-Origin Resource Sharing (CORS) Policy</h2>
+                                    <p>
+                                        <li>It was once possible to look at the traffic of the application and see several requests made by the app with a 
+                                        misconfigured the CORS policy. This allows the sending of Ajax requests from any other Amazon sub-domain. 
+                                        This weakness could potentially allow attackers with code-injection capabilities on one Amazon subdomain to perform a 
+                                        cross domain attack on another Amazon subdomain.</li>
+                                    </p>
+                                    <h2>Attack Capability</h2>
+                                    <p>Using the above example of an Alexa security flaw, there are many attack capabilities that could occur.
+                                    
+                                    <li> <b>Get Skill List: </b>This could allow the attacker to view the entire skill list of the 
+                                        victim’s account. This information can be used later to replace one of the victim’s skills 
+                                        with a published skill that the attacker chooses from the skills store. </li></p>
+                                    <li> <b>Silently Remove an Installed Skill: </b>This allows the attacker to remove a 
+                                        skill from the victim’s account. The skill we removed is one of the skills in the list we received 
+                                        in the previous API request. </li></p>
+                                    <li> <b>Silently Remove an Installed Skill: </b>This allows the attacker to remove a 
+                                        skill from the victim’s account. The skill we removed is one of the skills in the list we received 
+                                        in the previous API request. </li></p>
+                                    <li> <b>Get Victim’s Voice History with Alexa: </b>This allows the attacker to get the victim’s voice 
+                                        history with Alexa. The attacker could view the voice command history and Alexa’s response to them. 
+                                        This could lead to exposure of personal information, such as any private information it could have 
+                                        heard and recorded. </li></p>  
+                                        <h2>The Problem with Skills</h2>                                   
+                                    <p>For skills to pass Amazon’s vetting process, they must abide by Amazon’s privacy policy and meet 
+                                        security requirements for hosting services on external servers. Some researchers worry that Amazon’s 
+                                        vetting is not strict enough. Concerns have also been raised about the Alexa privacy policy and how 
+                                        it affects users’ data.</p>
+                                    <p>The <b>first</b> is the potential for duplicate invocation phrases. When developers register their skills 
+                                        with Amazon, some have found loopholes that allow them to use the same phrase as popular brand names. 
+                                        The issue that arises from duplicate invocation names is the increased threat of phishing attacks. 
+                                        When users download a skill, this usually gives a third party access to the user’s email address. 
+                                        Using the name of a popular brand can add fake legitimacy to phishing emails sent by the third party, 
+                                        encouraging users to fall victim to this malicious practice. The <b>second</b> major issue is that developers 
+                                        are able to make code alterations to their apps after they’ve already been vetted by Amazon. This means 
+                                        developers could go back and either accidentally or purposely make changes to the code that opens their 
+                                        apps up to malware and other cyber threats.</p>
+                                    <h2>Takeaway</h2>
+                                    <p>Security issues with Amazon Alexa skills should serve as a lesson for other organisations. 
+                                        Namely that if they open their product or service up to integration with third parties, 
+                                        there are many factors to consider to ensure organisations and their users’ data remains protected. 
+                                        Businesses planning to open their products or platforms to third party integrations should develop a 
+                                        comprehensive and stringent vetting process to guarantee proper security precautions are in place and 
+                                        require full transparency over how user data is collected and used. In addition, the way that IoT infrastructure
+                                        works, one with many points of possible failure, there needs to be measures in place to protect users for examples
+                                        of vulnerabilities stated above. Locking in a secure skill vetting process should be the first port of call, for user's data to be
+                                    as exposed as it has been in the past, we must patch up flaws now as the industry could grow into something we cannot control.</p>
+                                </div>
+							</section>
+					</div>
+						<!-- Three -->
+                        <section id="three">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>Let's Go Back</h2>
+                                </header>
+                                <p>You can navigate back to my homepage using the following button!</p>
+                                <ul class="actions">
+                                    <li><a href="index.html" class="button next">Click to go Home</a></li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                            <!-- Contact -->
+                            <section id="contact">
+                                <div class="inner">
+                                    <section>
+                                        <form method="post" action="#">
+                                            <div class="fields">
+                                                <div class="field half">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name" id="name" />
+                                                </div>
+                                                <div class="field half">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" />
+                                                </div>
+                                                <div class="field">
+                                                    <label for="message">Message</label>
+                                                    <textarea name="message" id="message" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                                <li><input type="reset" value="Clear" /></li>
+                                            </ul>
+                                        </form>
+                                    </section>
+                                    <section class="split">
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-envelope"></span>
+                                                <h3>Email</h3>
+                                                <a href="mailto:stella_williams@hotmail.co.uk">stella_williams@hotmail.co.uk</a>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-phone"></span>
+                                                <h3>Phone</h3>
+                                                <span>+44 79204 612 87</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <div class="contact-method">
+                                                <span class="icon solid alt fa-home"></span>
+                                                <h3>Where am I?</h3>
+                                                <span>Edinburgh<br>
+                                                United Kingdom</span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </section>
+        
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <div class="inner">
+                                    <ul class="icons">
+                                        <li><a href="https://twitter.com/AstroCode_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://www.instagram.com/stoodlesz/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://github.com/stoodlesz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/stella-williams94/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
+                                </div>
+                            </footer>
+        
+                    </div>
+        
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrolly.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+        
+            </body>
+        </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Threat Modelling and Secure Software Devleopment Lifecycle</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            img {
+            -webkit-filter: drop-shadow(9px 9px 9px #1f1f1f);
+            filter: drop-shadow(9px 9px 9px #1e1e1e);
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">About Me</a></li>
+							<li><a href="launching.html">Launching into Cybersecurity</a></li>
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Top of the Page</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Threat Modelling and Secure Software Devleopment Lifecycle</h1>
+									</header>
+									<span class="image main"><img src="images/AdobeStock_268133451.jpeg" alt="" /></span>
+									<h2></h2>
+									<p><h3><b><u>Security Software Development</u></b></h3>
+										Creating software that is secure requires a focus on security in the early stages of the software development cycle. However, security is often seen as a bonus feature. But in reality, security should be seen as a concern, not a feature (Sawano, 2019, p. 29). Security is technically a non-functional part of software development, so initially, a client probably won’t ask for encryption or other security mitigations as their main priority. In reality, it should be in the foreground of all development practice.
+										<br><br>Often in designing software or in computing academia, thinking like a hacker is not as commonplace as a security measure. The original method of doing risk assessment and analysis on the assets that need protection tends to forget to disregard services and features that need to be protected, although it does provide a good way of identifying threats, this omission is proof of “not thinking like a hacker”. We need to think, who are the hackers? What do they want? How would they get this? Use case and misuse cases are a more thorough method for detecting, analysing, and preventing malicious attackers from accessing and exposing a system.
+										<br><br>Use cases: capturing functional requirements of one or more actors interacting with the system, these could be malicious or non-malicious users and they will both be included in the diagram. It’s important to include non-malicious users in the system due to user error and to cover all the possible entrances and avenues that could be secured further. It is an important part of modern development methodologies such as the Rational Unified Process (RUP).
+										<br><br>Misuse cases: A misuse case is a use case from the point of view of a potential malicious threat actor/s. In addition, it can show authorised user errors, whether they are accidental or careless.
+										<br><br>The following figure (Damodaran, 2006) explains how users interact with a system, with the left-hand side ovals denoting the use cases and the functional features. The black ovals denote misuse cases as well as security hazards with the middle section, and bottom left & right sections representing “security use cases”. Security use cases are incredibly important in this research into thinking like a hacker, they are generated to counter the misuse cases threats and are non-functional, like encryption.
+										<br><br><img src="images/Picture 1.png" alt="" /><br><br>
+										<h3><b><u>The Steps</u></b></h3>
+										Firstly, the identification of actors and the creation of use cases. Secondly, identify negative actors through a mind map that could lead to misuse cases, with the focus being on how many ways can be used to cause harm. Look into all modes of attack and keep user error in mind due to them leading to an infringement of security in all components of a system. Looking at a software system as a set of components is key in methodologies such as STRIDE. Using STRIDE will open the analysis to all its components not just “patching up” the security. Thirdly, show the relationships for each use case and misuse case in a diagram. Finally, show security use cases, these can counter the misuse cases. These steps will be repeated during the software security life-cycle until all misuse cases are covered and countered.
+										<br><br><h3><b><u>The Conclusion</u></b></h3>
+										This concept of using a hacker’s mind was somewhat alien to the industry, but now it can be seen that it shows an organised way to install software security early in the software development lifecycle. If the security use cases are implemented in the design, the cost of protecting, mitigating, and cleaning up security infiltrations will be significantly reduced and cheaper for the company due to the implications and outcome being less severe. If attacks are predictable and planned for, the security design will either thwart attacks completely or provide layers of security that attackers will have to infiltrate to achieve their bounty, therefore making the process more difficult or less cost-effective (aka “worth it”) for the threat actor. In addition, combining these steps with STRIDE-based threat modelling can provide full-proof protection, STRIDE is lightweight and effective (Khan, 2017). Unfortunately, an attacker can achieve an objective by exploiting threats in different components of the system. But by identifying component-level vulnerabilities and their potential physical consequences, STRIDE can provide comprehensive and effective solutions for this due to the nature of the methodology.
+										<br><br><h3><b><u>Work Cited</u></b></h3>
+										<br>Sawano, D. B. J. &. D. D., 2019. Secure by Design. New York: Manning Publications Co. LLC.
+										<br><br>Khan, R., Mclaughlin, K., Laverty, D. & Sezer, S. (2017) STRIDE-based threat modeling for cyber-physical systems. In: [Online]. 2017 p. Available from: doi:10.1109/isgteurope.2017.8260283.
+										<br><br>Damodaran, Meledath. (2006). Secure Software Development Using Use Cases and Misuse Cases. Issues in Information Systems. 7.
+									</p>
+								</div>
+							</section>
+
+					</div>
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Let's Go Back</h2>
+								</header>
+								<p>You can navigate back to my homepage using the following button!</p>
+								<ul class="actions">
+									<li><a href="index.html" class="button next">Click to go Home</a></li>
+								</ul>
+							</div>
+						</section>
+						
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:stella_williams@hotmail.co.uk">stella_williams@hotmail.co.uk</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+44 79204 612 87</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Where am I?</h3>
+									<span>Edinburgh<br>
+									United Kingdom</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://twitter.com/AstroCode_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/stoodlesz/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/stoodlesz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/stella-williams94/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
